@@ -1,0 +1,46 @@
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 90px;
+    right: 0;
+    background-color: rgb(36, 35, 35);
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+
+.closebtn {
+    position: absolute;
+    z-index: 250;
+    top: 10px;
+    right: 25px;
+    font-size: 50px;
+    color: white;
+    transition: 0.8s;
+}
+
+.closebtn:hover {
+    color: gold;
+}
+
+@media screen and (max-width: 450px) {
+    .closebtn {
+        font-size: 25px;
+    }
+}
+
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+
+    .closebtn {
+        font-size: 25px;
+    }
+}
