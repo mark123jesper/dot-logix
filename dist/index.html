@@ -44,6 +44,10 @@
             display: none;
         }
 
+        html {
+            height: 100vh
+        }
+        
         * {
             box-sizing: border-box;
             margin: 0;
@@ -55,7 +59,8 @@
             overflow: hidden;
             width: 100vw;
             height: 100vh;
-            background-color: gray;
+            background-color: gold;
+            background-image: radial-gradient(rgba(142,121,62, 0.8), black 120%);
             position: relative;
         }
 
@@ -166,17 +171,6 @@
 
     <!-- SCRIPTS -->
     <script src="assets/scripts/animation.js"></script>
-    <script>
-        // $("input[type*=radio]").each(function (i, value) {
-        //     $(this).attr("title" + $(this).val());
-        // });
-        $("input[type*=radio]").each(function (i, value) {
-            $(this).attr("title");
-        });
-        $(this).attr("title").tooltip({
-            placement: 'left'
-        });
-    </script>
 </body>
 
 </html>

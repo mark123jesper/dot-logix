@@ -9,6 +9,7 @@
     overflow-x: hidden;
     transition: 0.5s;
     padding-top: 60px;
+    /* overflow: hidden; */
 }
 
 .closebtn {
@@ -32,9 +33,9 @@
 }
 
 @media screen and (max-height: 450px) {
-    .sidebar {
+    /* .sidebar {
         padding-top: 15px;
-    }
+    } */
 
     .sidebar a {
         font-size: 18px;

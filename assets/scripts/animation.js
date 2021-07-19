@@ -15,12 +15,8 @@ function closeNav() {
     document.getElementById("main").style.marginLeft = "0";
 }
 
-$(".btn").on("click", function () {
-    $(".menu").toggleClass("show");
-});
-
 $(".btn").click(function (e) {
-    $(".menu").show();
+    $(".menu").toggleClass("show");
     e.stopPropagation();
 });
 
@@ -89,3 +85,29 @@ $(document).ready(function () {
         elem.style.backgroundPosition = x;
     }
 })();
+    // Show Info On Click
+
+    // $('.item').click(function () {
+
+    //     $(this).addClass("active").siblings('.item').removeClass('active');
+    // });
+
+    $(".item1").on("click", function () {
+        $(".info1").toggleClass("active").removeClass("inactive");
+        $(".info2,.info3,.info4").removeClass("active").addClass("inactive");
+    });
+
+    $(".item2").on("click", function () {
+        $(".info2").toggleClass("active").removeClass("inactive");
+        $(".info1,.info3,.info4").removeClass("active").addClass("inactive");
+    });
+
+    $(".item3").on("click", function () {
+        $(".info3").toggleClass("active").removeClass("inactive");
+        $(".info2,.info1,.info4").removeClass("active").addClass("inactive");
+    });
+
+    $(".item4").on("click", function () {
+        $(".info4").toggleClass("active").removeClass("inactive");
+        $(".info2,.info3,.info1").removeClass("active").addClass("inactive");
+    });
