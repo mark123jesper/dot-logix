@@ -1,4 +1,34 @@
-section {
+
+.homeplate {
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 200px;
+    right: 0;
+    max-width: 100%;
+    max-height: 100%;
+    padding: 30px;
+    
+}
+
+.homeplate div {
+    text-align: center;
+    overflow: hidden;
+    background-color: yellow;
+}
+
+.homeplate .homeplate-article {
+    text-align: center;
+    width: 100%;
+    height: 100%;
+    overflow-y: scroll;
+    overf
+    background-color: green;
+}
+
+.accordion {
+    position: absolute;
+    z-index: 2;
     margin: -60px 0 0 0;
     text-align: center;
     height: 100vh;
@@ -6,15 +36,16 @@ section {
     display: flex;
 }
 
-section h2 {
-    transform: rotate(-90deg);
+.accordion h2 {
+    transform:  translateX(0) translateY(0) rotate(-90deg);
+    font-size: 29px;
 }
 
-.item1,.item2,.item3,.item4 {
-    background-color: #95a5a6;
-    border: 1px solid #7f8c8d;
+.item1,.item2,.item3,.item4,.item5 {
+    background-color: #bc75f9;
+    border: 1px solid #bdbdfd;
     cursor: pointer;
-    min-width: 3%;
+    width: 40px;
     display:flex;
     align-items: center;
     justify-content:center;
@@ -23,7 +54,8 @@ section h2 {
 .info1.active,
 .info2.active,
 .info3.active,
-.info4.active {
+.info4.active,
+.info5.active {
     width: 100%;
     transition: 0.5s all;
 }
@@ -33,11 +65,60 @@ section h2 {
     transition: 0.5s all;
 }
 
-.info1, .info2, .info3, .info4 {
-    background-color: #ecf0f1;
+.info1, .info2, .info3, .info4, .info5 {
+    background-color: #00218a;
     color: #222;
     overflow: hidden;
     transition: 0.5s all;
     width: 0;
+}
+
+.info1 div, .info2 div, .info3 div, .info4 div, .info5 div {
+    overflow-y: scroll;
+    height: 100%;
+    width: 100%;
+    color: white;
+}
+
+@media only screen and (max-width: 655px) {
+    .homeplate {
+        top: 200px;
+        left: 0;
+    }
+    
+    .accordion {
+        flex-direction: column;
+        height: 100%
+    }
+
+    .accordion h2 {
+        transform: rotate(0deg);
+    }
+    
+    .item1,.item2,.item3,.item4,.item5 {
+        width: 100%;
+        height: 40px;
+    }
+    
+    .info1.active,
+    .info2.active,
+    .info3.active,
+    .info4.active,
+    .info5.active {
+        height: 100%;
+        transition: 0.5s all;
+    }
+    
+    .inactive {
+        height: 0;
+        transition: 0.5s all;
+    }
+    
+    .info1, .info2, .info3, .info4, .info5 {
+        overflow-y: hidden;
+        overflow-x: auto;
+        width: 100%;
+        height: 0;
+    }
 }
 
