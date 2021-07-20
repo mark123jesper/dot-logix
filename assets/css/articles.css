@@ -34,12 +34,14 @@
 }
 
 .item1,.item2,.item3,.item4,.item5 {
-    background-color: #bc75f9;
+    background-color: #ff2079;
     cursor: pointer;
     width: 40px;
     display:flex;
     align-items: center;
     justify-content:center;
+    border-collapse: collapse;
+    border: 1px solid #00218a;
 }
 
 .info1.active,
