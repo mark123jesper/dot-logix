@@ -62,8 +62,8 @@ $(document).ready(function () {
         $("#expand").fadeOut(function () {
             $("#expand").text(($("#expand").text() == 'Home Screen') ? 'Learn More' :
                 'Home Screen').fadeIn();
-        })
-    })
+        });
+    });
 });
 
 //FOR MOUSE PARALLAX
