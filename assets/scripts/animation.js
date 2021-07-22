@@ -88,27 +88,27 @@ $(document).ready(function () {
 
 // FOR ARTICLE ACCORDIONS
 $(".item1").on("click", function () {
-    $(".info1").toggleClass("active").removeClass("inactive");
+    $(".info1").addClass("active").removeClass("inactive");
     $(".info2,.info3,.info4,.info5").removeClass("active").addClass("inactive");
 });
 
 $(".item2").on("click", function () {
-    $(".info2").toggleClass("active").removeClass("inactive");
+    $(".info2").addClass("active").removeClass("inactive");
     $(".info1,.info3,.info4,.info5").removeClass("active").addClass("inactive");
 });
 
 $(".item3").on("click", function () {
-    $(".info3").toggleClass("active").removeClass("inactive");
+    $(".info3").addClass("active").removeClass("inactive");
     $(".info2,.info1,.info4,.info5").removeClass("active").addClass("inactive");
 });
 
 $(".item4").on("click", function () {
-    $(".info4").toggleClass("active").removeClass("inactive");
+    $(".info4").addClass("active").removeClass("inactive");
     $(".info2,.info3,.info1,.info5").removeClass("active").addClass("inactive");
 });
 
 $(".item5").on("click", function () {
-    $(".info5").toggleClass("active").removeClass("inactive");
+    $(".info5").addClass("active").removeClass("inactive");
     $(".info2,.info3,.info1,.info4").removeClass("active").addClass("inactive");
 });
 
