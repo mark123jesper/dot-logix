@@ -1,226 +1,58 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" name="description" content="Page Description">
-    <!-- BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="assets/css/bootstrap.min.css" type="text/css">
-
-    <!-- ===================CUSTOM STYLES================== -->
-    <!-- ===================CUSTOM STYLES================== -->
-    <link rel="stylesheet" href="assets/css/sidebar.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="assets/css/navbar.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="assets/css/articles.css" type="text/css" media="screen">
-    <link rel="stylesheet" href="assets/css/loader.css" type="text/css" media="screen">
-    <!-- ===================CUSTOM STYLES================== -->
-    <!-- ===================CUSTOM STYLES================== -->
-
+    <!-- ================META TAGS============= -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1" name="description" content="Page Description" />
+    <!-- ================META TAGS============= -->
+    <!-- COMPILED STYLE CSS -->
+    <link rel="stylesheet" href="assets/css/compiled-style.css" type="text/css" media="screen" />
     <!-- BOOTSTRAP JS -->
-    <script src="assets/scripts/bootstrap.min.js" type="text/javascript"></script>
+    <script src="assets/js/bootstrap.min.js" type="text/javascript"></script>
     <!-- FONT-AWESOME -->
-    <script src="https://kit.fontawesome.com/217e732f03.js" crossorigin="anonymous" type="text/javascript"></script>
+    <script src="assets/js/font-awesome-217e732f03.js" crossorigin="anonymous" type="text/javascript"></script>
     <!-- JQUERY -->
-    <script src="assets/scripts/jquery-3.6.0.min.js" type="text/javascript"></script>
-    <!-- POPPER -->
-    <script src="assets/scripts/popper.min.js" type="text/javascript"></script>
-
-    <!-- ================ADDITIONAL META TAGS============= -->
-    <!-- ================ADDITIONAL META TAGS============= -->
+    <script src="assets/js/jquery-3.6.0.min.js" type="text/javascript"></script>
+    <!-- SWIPER JS -->
+    <script src="assets/js/swiper.min.js" type="text/javascript"></script>
+    <link rel="shortcut icon" href="#" />
     <title>Page Title</title>
     <style>
-        /* ==========================DON'T EDIT THIS=================================== */
+        /* BOILERPLATE STYLE */
         * {
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+            font-family: 'Raleway', sans-serif;
         }
 
         body {
-            overflow: hidden;
-            width: 100%;
-            height: 100%;
-            background-color: #04005e;
+            width: 100vw;
+            height: 100vh;
+            background: #011453;
         }
 
-        /* ==========================DON'T EDIT THIS=================================== */
-        label {
-            display: inline-block;
-            width: 100px;
+        /* CUSTOM STYLE */
+
+        ::-webkit-scrollbar {
+            width: 10px;
+            background: transparent;
         }
 
-        .eye {
-            width: 240px;
-            height: 240px;
-            border-radius: 100%;
-            position: relative;
-            overflow: hidden;
-            border: 6px solid #151515;
-            background: #180347;
-            z-index: 1;
-            transition: top 0.3s ease-out, left 0.3s ease-out, box-shadow 0.4s ease-out, transform 0.4s ease-out;
+        ::-webkit-scrollbar-thumb {
+            background: radial-gradient(#bb02c2, black 120%);
         }
 
-        html:active .eye {
-            box-shadow: 0 0 100px 0 rgba(68, 0, 255, 0.4);
-        }
-
-        .iris {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0%;
-            left: 0%;
-            background: radial-gradient(circle at center, #ffffff 0%, #4408d4 12%, #4508d48a 22%, #4408d4 70%);
-            background-size: 100%;
-            background-position: center;
-            background-repeat: no-repeat;
-            z-index: -2;
-            border-radius: 100%;
-            transition: background-size 0.3s;
-        }
-
-        html:active .iris {
-            background-size: 100%;
-        }
-
-        .rim {
-            width: 100%;
-            height: 100%;
-            position: absolute;
-            top: 0;
-            left: 0;
-            z-index: 9;
-            border-radius: 100%;
-            box-shadow: inset 0 2px 10px rgba(0, 0, 0, 1);
-            border: 1px solid #4408d4;
-            transition: all 0.2s;
-        }
-
-        html:active .rim {
-            border: 3px solid #5c17ff;
-        }
-
-
-        .blade {
-            width: 100%;
-            height: 100%;
-            border-radius: 100%;
-            overflow: hidden;
-            position: absolute;
-            z-index: -1;
-        }
-
-        .blade>div {
-            width: 80%;
-            height: 120%;
-            border-radius: 100%;
-            background: #1D1F20;
-            position: absolute;
-            top: 0%;
-            left: -29%;
-            box-shadow: inset 0 0 2px 0 rgba(255, 255, 255, 0.25), inset 0 0 10px 0 rgba(0, 0, 0, 0.8), 0 0 50px 0 rgba(68, 0, 255, 0.07);
-            overflow: hidden;
-            position: absolute;
-            transition: all 0.2s;
-        }
-
-        html:hover .blade>div {
-            top: 0%;
-            left: -55%;
-        }
-
-        html:active .blade>div {
-            top: 0%;
-            left: -65%;
-            box-shadow: inset 0 0 2px 0 rgba(255, 255, 255, 0.25), inset 0 0 10px 0 rgba(0, 0, 0, 0.8), 0 0 50px 0 rgba(68, 0, 255, 0.2);
-        }
-
-        .blade:nth-child(1) {
-            transform: rotate(50deg);
-        }
-
-        .blade:nth-child(2) {
-            transform: rotate(5deg);
-        }
-
-        .blade:nth-child(3) {
-            transform: rotate(-40deg);
-        }
-
-        .blade:nth-child(4) {
-            transform: rotate(-85deg);
-        }
-
-        .blade:nth-child(5) {
-            transform: rotate(-130deg);
-        }
-
-        .blade:nth-child(6) {
-            transform: rotate(-175deg);
-        }
-
-        .blade:nth-child(7) {
-            transform: rotate(-220deg);
-        }
-
-        .blade:nth-child(8) {
-            transform: rotate(-265deg);
-        }
-
-        html:active .blade:nth-child(8)>div {
-            top: 0%;
-            left: -35%;
-        }
-
-        #leftEye {
-            position: absolute;
-            top: 50%;
-            left: 35%;
-            margin: -100px 0 0 -100px;
-        }
-
-        /* html:active #leftEye {
-            top: 50.2%;
-            left: 35.2%;
-            transform: rotate(5deg);
-        } */
-
-        #rightEye {
-            position: absolute;
-            top: 50%;
-            left: 65%;
-            margin: -100px 0 0 -100px;
-        }
-
-        /* html:active #rightEye {
-            top: 50.2%;
-            left: 64.8%;
-            transform: rotate(-5deg);
-        } */
-
-        @media only screen and (max-width:844px) {
-
-            .eye {
-                display: none;
-            }
-
-        }
-
-        .question {
-            text-align: center;
-            padding: 20px;
-        }
-
-        .question h1 {
-            color: #ff2079
+        ::-webkit-scrollbar-thumb:hover {
+            background: radial-gradient(#4408d4, black 150%);
         }
     </style>
 </head>
 
 <body>
-    <!-- LOADER -->
+    <!-- LOADER SCREEN -->
     <!-- <div class="loader">
         <div class="container">
             <div class="box1"></div>
@@ -228,11 +60,14 @@
             <div class="box3"></div>
         </div>
     </div> -->
+    <!-- END OF LOADER SCREEN -->
 
     <!-- NAVIGATION BAR -->
     <nav id="myNavbar" class="custom-navbar">
         <div class="brand-logo">
-            <a><img src="dotLogix-logo.png" type="image/png"></a>
+            <a><img src="dotLogix-logo.png" type="image/png" />
+                <h1>(dot)Logix</h1>
+            </a>
         </div>
 
         <div class="menu">
@@ -249,559 +84,599 @@
 
     <!-- MAIN ARTICLE SIDEBAR -->
     <div id="mySidebar" class="sidebar">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i class="fas fa-window-close"></i></a>
-        <section class="homeplate-container">
-            <div class="homeplate-article">
-            </div>
-        </section>
-
         <section class="accordion">
+            <!-- ABOUT US -->
             <div class="item1">
                 <h2>About</h2>
             </div>
             <div class="info1 active">
-                <div>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fas fa-window-close"></i></a>
+                <div>A</div>
             </div>
+            <!-- END OF ABOUT US -->
 
-
+            <!-- SERVICES -->
             <div class="item2">
                 <h2>Services</h2>
             </div>
             <div class="info2 inactive">
-                <div>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fas fa-window-close"></i></a>
+                <div>A</div>
             </div>
+            <!-- END OF SERVICES -->
 
-
+            <!-- CAREERS -->
             <div class="item3">
                 <h2>Careers</h2>
             </div>
             <div class="info3 inactive">
-                <div>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fas fa-window-close"></i></a>
+                <div>A</div>
             </div>
+            <!-- END OF CAREERS -->
 
-
+            <!-- DEMOS -->
             <div class="item4">
                 <h2>Demos</h2>
             </div>
             <div class="info4 inactive">
-                <div>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fas fa-window-close"></i></a>
 
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
+                <div style="height: fit-content">
+                    <div style="height: fit-content">
+                        <div class="slideshow-header">
+                            <h3>Case Studies</h3>
+                            <h6>Our latest work in marketing, UI/UX design, mobile app development, wearable tech,
+                                website design and development, and web app development.</h6>
+                        </div>
+                    </div>
 
+                    <div style="height: fit-content">
+                        <section class="work-slideshow1">
+                            <article>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                    <figcaption>
+                                                        <h2>Diabetes Control</h2>
+                                                    </figcaption>
+                                                    <figcaption>The aim is to create an app which will make lives of
+                                                        people
+                                                        with diabetes simplier.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                    <figcaption>
+                                                        <h2>Limehome</h2>
+                                                    </figcaption>
+                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                        professionals and equipped by interior designers, they are able
+                                                        to
+                                                        combine the quality standard of a hotel with the advantages of
+                                                        an
+                                                        apartment.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                    <figcaption>
+                                                        <h2>Tasty</h2>
+                                                    </figcaption>
+                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                        your phone’s screen awake while it does so. Vegetarian? You can
+                                                        choose to hide all recipes involving meat.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                    <figcaption>
+                                                        <h2>TuneGo</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        TuneGO is a free platform to protect your rights and
+                                                        distribute your music globally through hundreds of digital music
+                                                        stores, and collect royalties.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
 
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                    <figcaption>
+                                                        <h2>Databox</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        Databox builds scalable data pipeline infrastructure &
+                                                        deploy machine learning and artificial intelligence models.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                    <figcaption>
+                                                        <h2>Diabetes Control</h2>
+                                                    </figcaption>
+                                                    <figcaption>The aim is to create an app which will make lives of
+                                                        people
+                                                        with diabetes simplier.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                    <figcaption>
+                                                        <h2>Limehome</h2>
+                                                    </figcaption>
+                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                        professionals and equipped by interior designers, they are able
+                                                        to
+                                                        combine the quality standard of a hotel with the advantages of
+                                                        an
+                                                        apartment.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                    <figcaption>
+                                                        <h2>Tasty</h2>
+                                                    </figcaption>
+                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                        your phone’s screen awake while it does so. Vegetarian? You can
+                                                        choose to hide all recipes involving meat.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                    <figcaption>
+                                                        <h2>TuneGo</h2>
+                                                    </figcaption>
+                                                    <figcaption>TuneGO is a free platform to protect your rights and
+                                                        distribute your music globally through hundreds of digital music
+                                                        stores, and collect royalties.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                    <figcaption>
+                                                        <h2>Databox</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        Databox builds scalable data pipeline infrastructure &
+                                                        deploy machine learning and artificial intelligence models.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
 
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
+                    <div style="height: fit-content">
+                        <section class="work-slideshow2">
+                            <article>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                    <figcaption>
+                                                        <h2>Diabetes Control</h2>
+                                                    </figcaption>
+                                                    <figcaption>The aim is to create an app which will make lives of
+                                                        people
+                                                        with diabetes simplier.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                    <figcaption>
+                                                        <h2>Limehome</h2>
+                                                    </figcaption>
+                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                        professionals and equipped by interior designers, they are able
+                                                        to
+                                                        combine the quality standard of a hotel with the advantages of
+                                                        an
+                                                        apartment.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                    <figcaption>
+                                                        <h2>Tasty</h2>
+                                                    </figcaption>
+                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                        your phone’s screen awake while it does so. Vegetarian? You can
+                                                        choose to hide all recipes involving meat.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                    <figcaption>
+                                                        <h2>TuneGo</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        TuneGO is a free platform to protect your rights and
+                                                        distribute your music globally through hundreds of digital music
+                                                        stores, and collect royalties.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
 
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                    <figcaption>
+                                                        <h2>Databox</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        Databox builds scalable data pipeline infrastructure &
+                                                        deploy machine learning and artificial intelligence models.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div>
+                                    <ul>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                    <figcaption>
+                                                        <h2>Diabetes Control</h2>
+                                                    </figcaption>
+                                                    <figcaption>The aim is to create an app which will make lives of
+                                                        people
+                                                        with diabetes simplier.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                    <figcaption>
+                                                        <h2>Limehome</h2>
+                                                    </figcaption>
+                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                        professionals and equipped by interior designers, they are able
+                                                        to
+                                                        combine the quality standard of a hotel with the advantages of
+                                                        an
+                                                        apartment.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                    <figcaption>
+                                                        <h2>Tasty</h2>
+                                                    </figcaption>
+                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                        your phone’s screen awake while it does so. Vegetarian? You can
+                                                        choose to hide all recipes involving meat.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                    <figcaption>
+                                                        <h2>TuneGo</h2>
+                                                    </figcaption>
+                                                    <figcaption>TuneGO is a free platform to protect your rights and
+                                                        distribute your music globally through hundreds of digital music
+                                                        stores, and collect royalties.</figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a href="#">
+                                                <figure>
+                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                    <figcaption>
+                                                        <h2>Databox</h2>
+                                                    </figcaption>
+                                                    <figcaption>
+                                                        Databox builds scalable data pipeline infrastructure &
+                                                        deploy machine learning and artificial intelligence models.
+                                                    </figcaption>
+                                                </figure>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
 
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
+                    <div style="height: fit-content">
+                        <div class="slideshow-header">
+                            <h3>Curated for Companies</h3>
+                            <h6>Companies we're partnered with in creative design and strategies</h6>
+                        </div>
+                    </div>
 
+                    <div class="slider1">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                    width="250" alt="" />
+                            </div>
+                        </div>
+                    </div>
 
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
+                    <div class="slider2">
+                        <div class="slide-track">
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                            <div class="slide">
+                                <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250"
+                                    alt="" />
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+            <!-- END OF DEMOS -->
 
+            <!-- BLOGS -->
             <div class="item5">
                 <h2>Blogs</h2>
             </div>
             <div class="info5 inactive">
-                <div>
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                    What is Lorem Ipsum?
-                    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-                    and scrambled it to make a type specimen book. It has survived not only five centuries, but also the
-                    leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
-                    with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
-                    publishing software like Aldus PageMaker including versions of Lorem Ipsum.
-
-                    Why do we use it?
-                    It is a long established fact that a reader will be distracted by the readable content of a page
-                    when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal
-                    distribution of letters, as opposed to using 'Content here, content here', making it look like
-                    readable English. Many desktop publishing packages and web page editors now use Lorem Ipsum as their
-                    default model text, and a search for 'lorem ipsum' will uncover many web sites still in their
-                    infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose
-                    (injected humour and the like).
-
-
-                    Where does it come from?
-                    Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
-                    classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin
-                    professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words,
-                    consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical
-                    literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33
-                    of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This
-                    book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of
-                    Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.
-
-                    The standard chunk of Lorem Ipsum used since the 1500s is reproduced below for those interested.
-                    Sections 1.10.32 and 1.10.33 from "de Finibus Bonorum et Malorum" by Cicero are also reproduced in
-                    their exact original form, accompanied by English versions from the 1914 translation by H. Rackham.
-
-                    Where can I get some?
-                    There are many variations of passages of Lorem Ipsum available, but the majority have suffered
-                    alteration in some form, by injected humour, or randomised words which don't look even slightly
-                    believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't
-                    anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet
-                    tend to repeat predefined chunks as necessary, making this the first true generator on the Internet.
-                    It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures,
-                    to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free
-                    from repetition, injected humour, or non-characteristic words etc.
-                </div>
+                <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><i
+                        class="fas fa-window-close"></i></a>
+                <div>A</div>
             </div>
-
+            <!-- END OF BLOGS -->
         </section>
     </div>
-    <!-- END OF MAIN SIDEBAR -->
+    <!-- END OF MAIN ARTICLE SIDEBAR -->
 
-    <!-- MAIN SCREEN ONLY MEDIA FILES-->
-    <div id="main">
-        <!-- FOR BACKGROUND -->
-        <!-- <div class="company-logo-main">
-            <img src="dotLogix-logo.png" alt="Dot Logix Company Logo">
-        </div> -->
-        <div class="question">
-            <h1>Interested how we put these staring eyes?</h1>
-        </div>
-        <div class="eye-container">
-            <div class="eye" id="leftEye">
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="iris"></div>
-                <div class="rim"></div>
-            </div>
+    <!-- VIDEO SLIDER -->
+    <div id="custom-container">
+        <section id="lab_video_slider">
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <div id="slide_one" class="swiper-slide">
+                        <video class="slider-video" oncontextmenu="return false;" preload loop autoplay>
+                            <source
+                                src="/assets/images/Cyberpunk Сity Digital Road Travel Looped 3D Background Animation _ Free Version Footage_Trim.mp4"
+                                type="video/mp4" />
+                        </video>
 
-            <div class="eye" id="rightEye">
-                <div class="blade">
-                    <div></div>
+                        <div id="lab_video_text_overlay">
+                            <div class="container">
+                                <h2>FEATURED</h2>
+                                <h5>
+                                    We are a Manila-based Website Design, Digital Marketing, and
+                                    Social Media Super-Company. (dot)Logix&trade; brand tenders,
+                                    and marketing strategies always serve up unique Website
+                                    designs coded with today’s modern technologies, made by
+                                    handpicked creative Designers and Multi-talented Developers
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="slide_two" class="swiper-slide">
+                        <!-- TEXT OVERLAY -->
+                        <div id="lab_video_text_overlay">
+                            <div class="container">
+                                <h2>Lorum Ipsum Deloras</h2>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc molestie
+                                </h5>
+                            </div>
+                        </div>
+
+                        <video class="slider-video" oncontextmenu="return false;" preload loop autoplay>
+                            <source type="video/mp4"
+                                src="/assets/images/Neon 3D Flying Puzzles Gradient Looped Background Animation _ Free Version_Trim.mp4" />
+                        </video>
+                    </div>
+
+                    <div id="slide_three" class="swiper-slide">
+                        <video class="slider-video" oncontextmenu="return false;" preload loop autoplay>
+                            <source type="video/mp4"
+                                src="/assets/images/Retro Pyramids on 80s Synthwave Neon Landscape with Glowing Sun 4K UHD 60fps 1 Hour Video Loop_Trim.mp4" />
+                        </video>
+
+                        <div id="lab_video_text_overlay">
+                            <div class="container">
+                                <h2>Lorum Ipsum Deloras</h2>
+                                <h5>
+                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                                    Nunc molestie
+                                </h5>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="blade">
-                    <div></div>
-                </div>
-                <div class="iris"></div>
-                <div class="rim"></div>
+                <!-- Add Pagination -->
+                <div class="swiper-pagination"></div>
+                <!-- Add Arrows -->
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
             </div>
-        </div>
+        </section>
     </div>
-    <!-- END OF MAIN SCREEN -->
+    <!-- END OF VIDEO SLIDER -->
 
-
-
-    <!-- SCRIPTS -->
-    <script src="assets/scripts/animation.js"></script>
+    <!-- CUSTOM JS -->
+    <script src="assets/js/animation.js" type="text/javascript"></script>
     <script>
-        jQuery(document).ready(function () {
-            $(document).mousemove(function (e) {
-
-                var xPos = e.pageX;
-                var yPos = e.pageY;
-                var mouseXPercent = Math.round(xPos / $(this).width() * 100);
-                var mouseYPercent = Math.round(yPos / $(this).height() * 100);
-
-                $('.iris').css('top', mouseYPercent - 50);
-                $('.iris').css('left', mouseXPercent - 50);
-
-            });
-        })
+        let progress = document.getElementById("progressbar");
+        let totalHeight = document.body.scrollHeight - window.innerHeight;
+        window.onscroll = function () {
+            let progressHeight = (window.pageYoffset / totalHeight) * 100;
+            progress.style.height = progressHeight + "%";
+        }
     </script>
 </body>
 

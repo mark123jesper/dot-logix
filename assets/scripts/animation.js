@@ -1,18 +1,18 @@
 //FOR MENU BAR TOGGLE
 function openNav() {
-    var e = document.getElementById("mySidebar");
-    if (e.style.width == '100%') {
-        e.style.width = '0px';
-        document.getElementById("main").style.marginRight = "0";
+    var sidebar = document.getElementById("mySidebar");
+    if (sidebar.style.width == '100%') {
+        sidebar.style.width = '0';
+        document.getElementById("container").style.width = "0";
     } else {
-        e.style.width = '100%';
-        document.getElementById("main").style.marginRight = "100";
+        sidebar.style.width = '100%';
+        document.getElementById("container").style.width = "100%";
     }
 }
 
 function closeNav() {
     document.getElementById("mySidebar").style.width = "0";
-    document.getElementById("main").style.marginLeft = "0";
+    document.getElementById("container").style.marginLeft = "0";
 }
 
 $(".btn").click(function (e) {
@@ -66,26 +66,6 @@ $(document).ready(function () {
     });
 });
 
-//FOR MOUSE PARALLAX
-// (function () {
-//     // Add event listener
-//     document.addEventListener("mousemove", parallax);
-//     const elem = document.querySelector("#myVideo");
-//     // Magic happens here
-//     function parallax(e) {
-//         let _w = window.innerWidth / 2;
-//         let _h = window.innerHeight / 2;
-//         let _mouseX = e.clientX;
-//         let _mouseY = e.clientY;
-//         let _depth1 = `${10 + (_mouseX - _w) * 0.01}% ${10 + (_mouseY - _h) * 0.01}%`;
-//         let _depth2 = `${10 + (_mouseX - _w) * 0.02}% ${10 + (_mouseY - _h) * 0.02}%`;
-//         let _depth3 = `${10 + (_mouseX - _w) * 0.06}% ${10 + (_mouseY - _h) * 0.06}%`;
-//         let x = `${_depth3}, ${_depth2}, ${_depth1}`;
-//         console.log(x);
-//         elem.style.backgroundPosition = x;
-//     }
-// })();
-
 // FOR ARTICLE ACCORDIONS
 $(".item1").on("click", function () {
     $(".info1").addClass("active").removeClass("inactive");
@@ -117,3 +97,76 @@ $(window).on("load", function () {
     console.log("load");
     $(".loader").delay(3000).fadeOut();
 });
+
+// Video slider
+var video1 = document.getElementById('video1');
+var video2 = document.getElementById('video2');
+var video3 = document.getElementById('video3');
+
+video1.onended = function () {
+    video2.play();
+    $("#video2,#content2,#next2,#prev2").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video3,#content3,#next3,#prev3").removeClass("shown").addClass("hidden");
+};
+
+video2.onended = function () {
+    video3.play();
+    $("#video3,#content3,#next3,#prev3").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+};
+
+video3.onended = function () {
+    video1.play();
+    $("#video1,#content1,#next1,#prev1").addClass("shown").removeClass("hidden");
+    $("#video3,#content3,#next3,#prev3,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+};
+
+$("#next1").on("click", function () {
+    video2.play();
+    video1.pause();
+    video1.currentTime = 0;
+    $("#video2,#content2,#next2,#prev2").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video3,#content3,#next3,#prev3").removeClass("shown").addClass("hidden");
+});
+
+$("#next2").on("click", function () {
+    video3.play();
+    video2.pause();
+    video2.currentTime = 0;
+    $("#video3,#content3,#next3,#prev3").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+});
+
+$("#next3").on("click", function () {
+    video1.play();
+    video3.pause();
+    video3.currentTime = 0;
+    $("#video1,#content1,#next1,#prev1").addClass("shown").removeClass("hidden");
+    $("#video3,#content3,#next3,#prev3,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+});
+
+$("#prev2").on("click", function () {
+    video1.play();
+    video2.pause();
+    video2.currentTime = 0;
+    $("#video1,#content1,#next1,#prev1").addClass("shown").removeClass("hidden");
+    $("#video3,#content3,#next3,#prev3,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+});
+
+$("#prev1").on("click", function () {
+    video3.play();
+    video1.pause();
+    video1.currentTime = 0;
+    $("#video3,#content3,#next3,#prev3").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video2,#content2,#next2,#prev2").removeClass("shown").addClass("hidden");
+});
+
+$("#prev3").on("click", function () {
+    video2.play();
+    video3.pause();
+    video3.currentTime = 0;
+    $("#video2,#content2,#next2,#prev2").addClass("shown").removeClass("hidden");
+    $("#video1,#content1,#next1,#prev1,#video3,#content3,#next3,#prev3").removeClass("shown").addClass("hidden");
+});
+
+

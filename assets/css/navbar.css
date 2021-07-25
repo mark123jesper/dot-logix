@@ -8,14 +8,27 @@
     width: 100%;
     height: 100px;
     background-color: transparent;
-    box-shadow: 1px 1px 25px #4408d4
+}
+
+.custom-navbar .brand-logo a {
+    display: flex;
+    align-items: center;
 }
 
 .brand-logo img {
-    float: left;
-    max-width: 60%;
-    max-height: 60%;
-    margin-left: 10px;
+    max-width: 25%;
+    max-height: 25%;
+    margin: 0 20px;
+    filter: drop-shadow(0 0 6px #e92efb)
+}
+
+.brand-logo h1 {
+    color: #ff2079;
+    font-size: 30px;
+    font-weight: bolder;
+    text-shadow: 0 0px 8px #fff,
+        0 0 10px #fff,
+        0 0 0px #e92efb;
 }
 
 .menu {
@@ -62,17 +75,26 @@
     transition: all 0.5s ease-in-out;
 }
 
+@media only screen and (max-width:730px) {
+    .brand-logo h1 {
+        display: none
+    }
+}
+
 @media only screen and (max-width:400px) {
     .custom-navbar {
         overflow: visible;
+    }
+
+    .brand-logo h1 {
+        display: none
     }
 
     .menu {
         width: 100%;
         right: 0;
         top: 90px;
-        background-color: #4408d4;
-        background-image: radial-gradient(#4408d4, black 120%);
+        background-color: #4408d4dd;
         overflow: hidden;
         display: flex;
         flex-direction: column;

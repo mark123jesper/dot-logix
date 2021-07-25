@@ -5,7 +5,7 @@
     z-index: 5;
     top: 100px;
     right: 0;
-    background-color: rgb(36, 35, 35);
+    background-color: transparent;
     overflow-x: hidden;
     overflow-y: hidden;
     transition: 0.5s;
@@ -15,16 +15,16 @@
 
 .closebtn {
     position: absolute;
-    z-index: 250;
-    top: 10px;
-    right: 25px;
-    font-size: 50px;
-    color: white;
+    z-index: 1;
+    top: 0px;
+    right: 10px;
+    font-size: 35px;
+    color: #e92efb99;
     transition: 0.8s;
 }
 
 .closebtn:hover {
-    color: #4408d4;
+    color: #ff2079;
 }
 
 @media screen and (max-width: 450px) {
