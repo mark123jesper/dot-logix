@@ -82,7 +82,7 @@ $(".item5").on("click", function () {
 
 $(window).on("load", function () {
   console.log("load");
-  $(".loader").delay(3000).fadeOut();
+  $(".loader").delay(2000).fadeOut();
 }); // VIDEO SLIDER AJAX
 
 var swiper = new Swiper(".swiper-container", {
@@ -91,7 +91,7 @@ var swiper = new Swiper(".swiper-container", {
   nextButton: ".swiper-button-next",
   prevButton: ".swiper-button-prev",
   spaceBetween: 0,
-  autoplay: 6000,
+  autoplay: 5000,
   autoplayDisableOnInteraction: false
 });
 $(".opennav, .closebtn").click(function (e) {
