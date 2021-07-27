@@ -161,7 +161,7 @@
     margin: auto;
     overflow: hidden;
     position: relative;
-    width: 960px;
+    width: 100%;
 }
 
 .slider1::before,
@@ -211,9 +211,6 @@
 
 @media only screen and (max-width:999px) {
     
-    .info4 figcaption:nth-child(3) {
-        /* display: none; */
-    }
 
     .info4 figcaption h1 {
         font-size: 25px;
@@ -230,11 +227,19 @@
     }
 
     .slider1,
-    .slider2,
+    .slider2 {
+        width: 100%;
+    }
+
+
     .slider1::before,
     .slider1::after,
     .slider2::before,
-    .slider2::after,
+    .slider2::after {
+        width: 100px;
+    }
+
+
     .slider1 .slide,
     .slider2 .slide {
         height: 75px;

@@ -15,12 +15,13 @@
 
 .closebtn {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 0px;
     right: 10px;
     font-size: 35px;
     color: #e92efb99;
     transition: 0.8s;
+    text-decoration: none;
 }
 
 .closebtn:hover {

@@ -1,5 +1,4 @@
 @import url("bootstrap.min.css");
-@import url("all.min.css");
 @import url("swiper.min.css");
 @import url("articles.css");
 @import url("loader.css");
@@ -9,5 +8,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,900;1,400;1,500;1,900&display=swap');
 /* ARTICLES CSS */
 @import url("demos.css");
-
+@import url("services.css");
 
