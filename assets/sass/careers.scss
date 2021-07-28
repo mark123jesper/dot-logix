@@ -37,26 +37,88 @@
     text-decoration: none;
 }
 
-.career-container .col-xl-6 {
-    transition: 0.5s all;
-}
+// .career-container .col-xl-6 {
+//     transition: 0.5s all;
+// }
 
-.career-container .col-xl-6:hover {
-    transform: scaleX(1.2);
-    background-color:blue;
-    transition: 0.5s all;
-}
+// .career-container .col-xl-6:hover {
+//     transform: scaleX(1.2);
+//     background-color:blue;
+//     transition: 0.5s all;
+// }
 
-.career-container .col-lg-4 img {
-    transition: 0.5s all;
-}
+// .career-container .col-lg-4 img {
+//     transition: 0.5s all;
+// }
 
-.career-container .col-lg-4 img:hover {
-    transform: scale(1.2);
-    transition: 0.5s all;
-}
+// .career-container .col-lg-4 img:hover {
+//     transform: scale(1.2);
+//     transition: 0.5s all;
+// }
 
 .lightHeader .col-12 a {
     color: pink;
 
+}
+
+$bg-color: #F1E9DA;
+$link-text-color: #000;
+$button-bg-1: #541388;
+$button-bg-2: #D90368;
+$button-bg-3: #104547;
+$button-bg-4: #4F000B;
+$button-bg-5: #F28123;
+$border-radius: 6px;
+$overlay-color: #fff;
+
+/* button styles !!!YOU NEED THEM 
+!!!ALSO YOU NEED TO ADD FONTWESOME */
+  
+.effect {
+  text-align: center;
+  display: inline-block;
+  position: relative;
+  text-decoration: none;
+  color: $link-text-color;
+  text-transform: capitalize;
+  /* background-color: - add your own background-color */
+  font: {
+    family: 'Roboto', sans-serif; /* put your font-family */
+    size: 18px;
+  }
+  border-radius: $border-radius;
+  overflow: hidden;
+}
+
+/* effect-5 styles */
+
+.effect.effect-5 {
+  transition: all 0.2s linear 0s;
+  
+  &:before {
+    content: "\f054";
+    font-family: FontAwesome;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    height: 100%;
+    width: 30px;
+    background-color: rgba($overlay-color,0.3);
+    border-radius: 0 50% 50% 0;
+    transform: scale(0,1);
+    transform-origin: left center;
+    transition: all 0.2s linear 0s;
+  }
+  
+   &:hover {
+    text-indent: 30px;
+    
+    &:before {
+      transform: scale(1,1);
+      text-indent: 0;
+    }
+  }
 }
