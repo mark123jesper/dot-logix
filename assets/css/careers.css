@@ -4,56 +4,58 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  align-content: center;
+}
+
+.medium {
+  background-color: rgba(238, 0, 206, 0.8);
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-content: center;
+}
+
+.lightHeader {
+  background-color: rgba(238, 0, 206, 0.8);
+}
+
+.career-background {
+  background-image: url("https://fireart.studio/wp-content/uploads/2019/12/bg13.png");
+  background-size: 100vw;
+  background-repeat: no-repeat;
 }
 
 .career-container h2 {
   transform: rotate(0deg);
+  font-weight: 700;
+  font-size: 60px;
 }
 
-.career-item1 a:hover,
-.career-item2 a:hover {
-  text-decoration: underline;
-}
-
-.career-item1 li a,
-.career-item1 li a {
+.career-container div a {
+  color: white;
   text-decoration: none;
 }
 
-.career-item1 li,
-.career-item2 li {
-  list-style-type: none;
-  color: white;
+.career-container .col-xl-6 {
+  transition: 0.5s all;
 }
 
-.career-item1 .container,
-.career-item2 .container {
-  width: 100%;
-  background-color: lightblue;
-  border-radius: 3px;
-  padding-top: 2px;
-  padding-bottom: 2px;
+.career-container .col-xl-6:hover {
+  transform: scaleX(1.2);
+  background-color: blue;
+  transition: 0.5s all;
 }
 
-.career-item1 {
-  float: left;
-  padding-right: 50px;
-  width: 45%;
+.career-container .col-lg-4 img {
+  transition: 0.5s all;
 }
 
-.career-item2 {
-  float: right;
-  padding-left: 50px;
-  width: 45%;
+.career-container .col-lg-4 img:hover {
+  transform: scale(1.2);
+  transition: 0.5s all;
 }
 
-.career-item1 h2,
-.career-item2 h2 {
-  text-align: center;
-}
-
-.career-item2 p,
-.career-item1 p {
-  padding-top: 30px;
+.lightHeader .col-12 a {
+  color: pink;
 }
