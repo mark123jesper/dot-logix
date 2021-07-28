@@ -110,6 +110,6 @@ var swiper = new Swiper(".swiper-container", {
 });
 
 $(".opennav, .closebtn").click(function (e) {
-    $("#lab_video_text_overlay, .swiper-pagination, .swiper-button-next, .swiper-button-prev").toggleClass("hidden");
+    $("#lab_video_text_overlay, .swiper-pagination, .swiper-button-next, .swiper-button-prev, #proposalButton").toggleClass("hidden");
     e.stopPropagation();
 });

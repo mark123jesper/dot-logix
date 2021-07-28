@@ -1,0 +1,82 @@
+.swiper-container {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+}
+
+/* Text Overlay */
+#lab_video_text_overlay {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    width: 80%;
+    bottom: 5em;
+}
+
+#lab_video_text_overlay h2 {
+    font-size: 4em;
+}
+
+#lab_video_text_overlay .container {
+    text-align: center;
+    margin: 0px auto;
+    background-color: #4408d400;
+    
+}
+
+.slider-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    min-width: 100%;
+    min-height: 100%;
+    background-size: cover;
+
+}
+
+.hidden, .hidden.swiper-button-prev.swiper-button-disabled, .hidden.swiper-button-next.swiper-button-disabled {
+    opacity: 0;
+    transition: 0.3s all linear;
+}
+
+#lab_video_text_overlay, .swiper-pagination, .swiper-button-next, .swiper-button-prev, .swiper-button-prev.swiper-button-disabled, .swiper-button-next.swiper-button-disabled {
+    transition: 0.3s all linear;
+}
+
+@media screen and (max-width: 991px) {
+    #lab_video_text_wrap {
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    #lab_video_text_wrap {
+        height: 250px;
+    }
+
+    #lab_video_text_overlay h2 {
+        font-size: 2em;
+    }
+
+    #lab_video_text_overlay h5 {
+        font-size: 1em;
+    }
+}

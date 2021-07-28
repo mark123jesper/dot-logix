@@ -1,248 +1,215 @@
+.heavy {
+  background-color: rgba(238, 0, 206, 0.8);
+  height: 250px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 /* section with demo-slideshow class */
 .work-slideshow1 h2,
 .work-slideshow2 h2 {
-    transform: rotate(0deg);
+  transform: rotate(0deg);
 }
-
-.slideshow-header {
-    margin: 30px auto;
-}
-
 
 .work-slideshow1 img,
 .work-slideshow2 img {
-    display: block;
-    width: 100%;
-    transition: all 0.8s;
+  display: block;
+  width: 100%;
+  transition: all 0.8s;
 }
 
 .work-slideshow1,
 .work-slideshow2 {
-    width: 100%;
-    overflow: hidden;
+  width: 100%;
+  overflow: hidden;
 }
 
 .work-slideshow1 article,
 .work-slideshow2 article {
-    display: flex;
-    width: calc(100% * 3);
-    animation: bannermove1 30s linear infinite;
+  display: flex;
+  width: calc(100% * 3);
+  animation: bannermove1 30s linear infinite;
 }
 
 .work-slideshow2 article {
-    animation: bannermove2 30s linear infinite;
+  animation: bannermove2 30s linear infinite;
 }
 
 .work-slideshow1 article.paused,
 .work-slideshow2 article.paused {
-    -webkit-animation-play-state: paused;
-    animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .work-slideshow1 div,
 .work-slideshow2 div {
-    width: 100%;
+  width: 100%;
 }
 
 .work-slideshow1 ul,
 .work-slideshow2 ul {
-    display: flex;
-    list-style-type: none;
-    padding-left: 0;
-    margin: 0;
+  display: flex;
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
 }
 
 .work-slideshow1 li,
 .work-slideshow2 li {
-    width: 100%;
-    margin: 5px;
+  width: 100%;
+  margin: 5px;
 }
 
 .work-slideshow1 li figure,
 .work-slideshow2 li figure {
-    max-width: 600px;
-    min-width: 200px;
+  max-width: 600px;
+  min-width: 200px;
 }
-
 
 .work-slideshow1 li figcaption,
 .work-slideshow2 li figcaption {
-    text-align: center;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+  text-align: center;
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .work-slideshow1 a,
 .work-slideshow2 a {
-    text-decoration: none;
-    color: white;
+  text-decoration: none;
+  color: white;
 }
 
 .work-slideshow1 figcaption:hover,
 .work-slideshow2 figcaption:hover {
-    color: #ff2079;
-    transition: all 0.7s;
+  color: #ff2079;
+  transition: all 0.7s;
 }
 
 .work-slideshow1 img:hover,
 .work-slideshow2 img:hover {
-    transform: scale(0.95);
-    transition: all 0.8s;
+  transform: scale(0.95);
+  transition: all 0.8s;
 }
 
 @keyframes bannermove1 {
-    0% {
-        transform: translateX(-50%);
-    }
-
-    100% {
-        transform: translateX(0);
-    }
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes bannermove2 {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(-50%);
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
 }
 
 /* ICON SLIDER */
 
-@-webkit-keyframes scroll1 {
-    0% {
-        transform: translateX(calc(-250px * 7));
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
 @keyframes scroll1 {
-    0% {
-        transform: translateX(calc(-250px * 7));
-    }
-
-    100% {
-        transform: translateX(0);
-    }
-}
-
-@-webkit-keyframes scroll2 {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
+  0% {
+    transform: translateX(calc(-250px * 7));
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 
 @keyframes scroll2 {
-    0% {
-        transform: translateX(0);
-    }
-
-    100% {
-        transform: translateX(calc(-250px * 7));
-    }
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(calc(-250px * 7));
+  }
 }
 
 .slider1,
 .slider2 {
-    background: white;
-    box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
-    height: 100px;
-    margin: auto;
-    overflow: hidden;
-    position: relative;
-    width: 100%;
+  background: white;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.125);
+  height: 100px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
 }
 
 .slider1::before,
 .slider1::after,
 .slider2::before,
 .slider2::after {
-    background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
-    content: "";
-    height: 100px;
-    position: absolute;
-    width: 200px;
-    z-index: 2;
+  background: linear-gradient(to right, white 0%, rgba(255, 255, 255, 0) 100%);
+  content: "";
+  height: 100px;
+  position: absolute;
+  width: 200px;
+  z-index: 2;
 }
 
 .slider1::after,
 .slider2::after {
-    right: 0;
-    top: 0;
-    transform: rotateZ(180deg);
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
 }
 
 .slider1::before,
 .slider2::before {
-    left: 0;
-    top: 0;
+  left: 0;
+  top: 0;
 }
 
 .slider1 .slide-track,
 .slider2 .slide-track {
-    -webkit-animation: scroll1 40s linear infinite;
-    animation: scroll1 40s linear infinite;
-    display: flex;
-    width: calc(250px * 14);
+  animation: scroll1 40s linear infinite;
+  display: flex;
+  width: calc(250px * 14);
 }
 
 .slider2 .slide-track {
-    -webkit-animation: scroll2 40s linear infinite;
-    animation: scroll2 40s linear infinite;
+  animation: scroll2 40s linear infinite;
 }
 
 .slider1 .slide,
 .slider2 .slide {
-    height: 100px;
-    width: 250px;
-    margin: 0 10px;
+  height: 100px;
+  width: 250px;
+  margin: 0 10px;
 }
 
-@media only screen and (max-width:999px) {
-    
-
-    .info4 figcaption h1 {
-        font-size: 25px;
-    }
-
-    .info4 figcaption {
-        font-size: 15px;
-    }
-
-    .slider1 img,
-    .slider2 img {
-        width: 150px;
-        height: 75px;
-    }
-
-    .slider1,
-    .slider2 {
-        width: 100%;
-    }
-
-
-    .slider1::before,
-    .slider1::after,
-    .slider2::before,
-    .slider2::after {
-        width: 100px;
-    }
-
-
-    .slider1 .slide,
-    .slider2 .slide {
-        height: 75px;
-        width: 250px;
-    }
+@media only screen and (max-width: 999px) {
+  .info4 figcaption h1 {
+    font-size: 25px;
+  }
+  .info4 figcaption {
+    font-size: 15px;
+  }
+  .slider1 img,
+  .slider2 img {
+    width: 150px;
+    height: 75px;
+  }
+  .slider1,
+  .slider2 {
+    width: 100%;
+  }
+  .slider1::before,
+  .slider1::after,
+  .slider2::before,
+  .slider2::after {
+    width: 100px;
+  }
+  .slider1 .slide,
+  .slider2 .slide {
+    height: 75px;
+    width: 250px;
+  }
 }

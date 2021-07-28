@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+    </script>
+    <link rel="stylesheet" href="try.css" type="text/css" media="screen">
+
+    <style>
+    </style>
+</head>
+
+<body>
+    <div id="mySideForm" class="sideForm">
+        <a href="javascript:void(0)" class="closeForm" onclick="closeForm()">X</a>
+        <div class="container">
+            <div class="py-2 text-center">
+                <h2>Request a Proposal</h2>
+                <h4>Fill Out Our Form & We’ll be in Touch Shortly</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="telephone" class="form-label">Contact Phone Number</label>
+                    <input type="tel" class="form-control" id="telephone" placeholder="" value="" required
+                        pattern="[0-9]{11}">
+                    <div class="invalid-feedback">
+                        Please enter a valid 11-digit contact number (09123456789).
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="companyName" class="form-label">Company Name</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid company name is required.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="country" class="form-label">How did you know about us?</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid choice.
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-2 text-center">
+                <h4>Project Type</h4>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Website</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Marketing Automation</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">SEO</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Email Marketing</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Amazon</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Branding</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Mobile App</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Social Media</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">PPC</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Marketing - Other</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="textArea" class="form-label">Project Description</label>
+                        <textarea class="form-control" id="textArea" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address1">
+                        <label class="form-check-label" for="same-address1">Sign me up for (dot)Logix Libation. Get
+                            monthly marketing, web, mobile tips and insight.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-md-12">
+                    <button class="w-50 btn btn-primary" type="submit">Continue to checkout</button>
+                </div>
+            </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="mainForm">
+        <button class="openForm" onclick="openForm()">&#9776; Request a Proposal</button>
+    </div>
+
+    <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openForm() {
+            document.getElementById("mySideForm").style.width = "100%";
+            document.getElementById("mainForm").style.marginLeft = "100%";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeForm() {
+            document.getElementById("mySideForm").style.width = "0";
+            document.getElementById("mainForm").style.marginLeft = "0";
+        }
+    </script>
+</body>
+
+</html>

@@ -23,6 +23,10 @@
     <title>(dot)Logix | A Design Company</title>
     <style>
         /* BOILERPLATE STYLE */
+        html {
+            scroll-behavior: smooth;
+        }
+
         *,
         *::after,
         *::before {
@@ -52,6 +56,13 @@
 
         ::-webkit-scrollbar-thumb:hover {
             background: radial-gradient(#4408d4, black 150%);
+        }
+
+        .btn:not(.custom-navbar .btn) {
+            display: block !important;
+            position: relative !important;
+            z-index: index 25 !important;
+            ;
         }
     </style>
 </head>
@@ -96,7 +107,306 @@
             </div>
             <div class="info1 active">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-                <div>A</div>
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>WHAT WE DO</h1>
+                            <p>Our creations always serve up something distinct. We mix a potent combination of
+                                digital marketing strategy with a generous splash of creative juices and blend in
+                                technology-focused, customized solutions as a chaser.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <figure class="effect-dexter">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/19.jpg" alt="img19" />
+                        <figcaption>
+                            <h2><span>UI/UX</span></h2>
+                            <p>For the comfort of users.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-dexter">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/12.jpg" alt="img12" />
+                        <figcaption>
+                            <h2><span>WEB</span></h2>
+                            <p>From Websites to Web Apps.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-dexter">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/19.jpg" alt="img19" />
+                        <figcaption>
+                            <h2><span>APPS</span></h2>
+                            <p>From Phones to Tablet to Wearable Devices.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                    <figure class="effect-dexter">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/12.jpg" alt="img12" />
+                        <figcaption>
+                            <h2><span>MARKET</span></h2>
+                            <p>Dominate the market. Grow your Business.</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>OUR OFFICES</h1>
+                            <p>Come visit us in Union Square NYC, Washington DC, Nashville TN, or in our very city
+                                of Metro Manila</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="grid">
+                    <figure class="effect-jazz">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg" alt="img25" />
+                        <figcaption>
+                            <h2><span>NEW YORK</span></h2>
+                            <p>112 West 34th Street
+                                18th Floor
+                                New York, NY 10003
+                                PH: 1-646-661-7828
+                                eFax: 1-888-308-8990
+                                Sales: Ext. 102</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-jazz">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/6.jpg" alt="img06" />
+                        <figcaption>
+                            <h2><span>METRO MANILA</span></h2>
+                            <p>1101 Connecticut Avenue NW
+                                Suite 450
+                                Washington, DC 20036
+                                PH: 1-202-900-8859
+                                eFax: 1-888-308-8990
+                                Sales: Ext. 102</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-jazz">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/25.jpg" alt="img25" />
+                        <figcaption>
+                            <h2><span>DC METRO</span></h2>
+                            <p>1101 Connecticut Avenue NW
+                                Suite 450
+                                Washington, DC 20036
+                                PH: 1-202-900-8859
+                                eFax: 1-888-308-8990
+                                Sales: Ext. 102</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="effect-jazz">
+                        <img src="https://tympanus.net/Development/HoverEffectIdeas/img/6.jpg" alt="img06" />
+                        <figcaption>
+                            <h2><span>NASHVILLE</span></h2>
+                            <p>424 Church St
+                                Suite 2000
+                                Nashville, TN 37219
+                                PH: 1-615-800-8922
+                                eFax: 1-888-308-8990
+                                Sales: Ext. 101</p>
+                            <a href="#">View more</a>
+                        </figcaption>
+                    </figure>
+                </div>
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>OUR CAPABILITIES</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-lg-7 d-flex justify-content-center align-items-center">
+                            <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="d-block w-100 h-100">
+                                            <blockquote>
+                                                <h4>"Opportunity does not knock, it presents itself when you beat
+                                                    down the door."</h4>
+                                            </blockquote>
+                                            -Kyle Chandler
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100 h-100">
+                                            <blockquote>
+                                                <h4>"Creativity is intelligence having fun."
+                                            </blockquote>
+                                            </h4>
+                                            -Albert Einstein
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100 h-100">
+                                            <blockquote>
+                                                <h4>"Life is 10% what happens to you and 90% how you react to it."
+                                            </blockquote>
+                                            </h4>
+                                            -Charles R. Swindoll
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="d-block w-100 h-100">
+                                            <blockquote>
+                                                <h4>"In theory there is no difference between theory and practice.
+                                                    In practice there is."
+                                            </blockquote>
+                                            </h4>
+                                            -Yogi Berra
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-5 text-md-start expertise">
+                            <h3>WE ARE EXPERTS IN</h3>
+                            <h5>
+                                <ul>
+                                    <a href="#">
+                                        <li>Brand Strategy</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Website Design</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Digital Marketing</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Website Development</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Mobile App Development</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Social Media Management</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Search Engine Optimization</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Pay-per-Click Management</li>
+                                    </a>
+                                    <a href="#">
+                                        <li>Conversion Rate Optimization</li>
+                                    </a>
+                                </ul>
+                            </h5>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>OUR FOUNDERS</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid mt-3">
+                    <div class="row founders">
+                        <div class="col-md-4">
+                            <div class="container">
+                                <figure><img src="assets/images/icons/user.png">
+                                    <figcaption>
+                                        <h4>Mark Jesper Pillerva</h4>
+                                    </figcaption>
+                                </figure>
+
+                                <a href="https://mark123jesper.github.io/">
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h2>Profile Link</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="container">
+                                <figure><img src="assets/images/icons/user.png">
+                                    <figcaption>
+                                        <h4>Jonalyn Adres</h4>
+                                    </figcaption>
+                                </figure>
+
+                                <a href=#>
+                                    <div class="overlay">
+                                        <a href=#>
+                                            <div class="text">
+                                                <h2>Profile Link</h2>
+                                            </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4">
+                            <div class="container">
+                                <figure><img src="assets/images/icons/user.png">
+                                    <figcaption>
+                                        <h4>Francisco Fuentebella Jr.</h4>
+                                    </figcaption>
+                                </figure>
+
+                                <a href=#>
+                                    <div class="overlay">
+                                        <div class="text">
+                                            <h2>Profile Link</h2>
+                                        </div>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>GET IN TOUCH WITH US</h1>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="container mt-2 ">
+                    <div class="row">
+                        <form>
+                            <div class="col-12 form-group">
+                                <label for="exampleInputEmail1">Newsletter Sign-up</label>
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Enter email">
+                                <small id="emailHelp" class="form-text">We'll never share your email with
+                                    anyone else.</small>
+                            </div>
+
+                            <div class="row my-4">
+                                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                    <button class="w-75 btn btn-primary" type="submit">Subscribe to
+                                        Newsletter</button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
             </div>
             <!-- END OF ABOUT US -->
 
@@ -246,6 +556,115 @@
                             </div>
                         </div>
 
+                        <div class="container-fluid">
+                            <div class="row mt-2">
+                                <div class="col-12 heavy">
+                                    <h1>EXPERTISE</h1>
+                                    <p>We serve up mouthwatering work that will have your customers staying until
+                                        closing time.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="container-fluid">
+                            <div class="row mt-2">
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <img
+                                            src="https://cdn-blmce.nitrocdn.com/JacqyZFxQpwHdBhotwjfAiEYlUcIzQnR/assets/static/optimized/rev-bd73137/wp-content/uploads/2015/01/strategy.png">
+                                        <figcaption>
+                                            <h3>STRATEGY</h3>
+                                        </figcaption>
+                                        <figcaption>
+                                            <ul class="text-start">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Brand Positioning</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>Brand Voice</li>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Marketing</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>Direct Response</li>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <img
+                                            src="https://cdn-blmce.nitrocdn.com/JacqyZFxQpwHdBhotwjfAiEYlUcIzQnR/assets/static/optimized/rev-bd73137/wp-content/uploads/2015/01/creative.png">
+                                        <figcaption>
+                                            <h3>CREATIVE</h3>
+                                        </figcaption>
+                                        <figcaption>
+                                            <ul class="text-start">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Identity Design</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>Visual Design</li>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Interactive Design</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>UX/UI Design</li>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+
+                                <div class="col-lg-4">
+                                    <figure>
+                                        <img
+                                            src="https://cdn-blmce.nitrocdn.com/JacqyZFxQpwHdBhotwjfAiEYlUcIzQnR/assets/static/optimized/rev-bd73137/wp-content/uploads/2015/01/technology.png">
+                                        <figcaption>
+                                            <h3>TECHNOLOGY</h3>
+                                        </figcaption>
+                                        <figcaption>
+                                            <ul class="text-start">
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Websites</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>Mobile Apps</li>
+                                                    </div>
+                                                </div>
+
+                                                <div class="row">
+                                                    <div class="col-xl-6">
+                                                        <li>Web Apps</li>
+                                                    </div>
+                                                    <div class="col-xl-6">
+                                                        <li>Wearable Tech</li>
+                                                    </div>
+                                                </div>
+                                            </ul>
+                                        </figcaption>
+                                    </figure>
+                                </div>
+                            </div>
+                        </div>
+
+
                         <div class="row mt-2">
                             <div class="col-12 heavy">
                                 <h1>LET OUR EXPERTISE HELP YOU</h1>
@@ -255,39 +674,37 @@
                         </div>
 
                         <div class="container-fluid">
-                            <div class="col-12">
-                                <form class="">
-                                    <div class="card">
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-9 col-11">
-                                                <div class="row mt-0">
-                                                    <div class="col-md-12 ">
-                                                        <h4 class="text-center heading">get 10% off</h4>
-                                                        <p class="text-center sub-heading">subscribe to our
-                                                            newsletter & receive a coupon</p>
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row mb-3">
-                                                    <div class="col-md-12 mb-0"> <input id="e-mail" type="text"
-                                                            placeholder="ENTER YOUR EMAIL" name="email"
-                                                            class="form-control input-box rm-border text-center">
-                                                    </div>
-                                                </div>
-                                                <div class="form-group row justify-content-center mb-0">
-                                                    <div class="col-md-12 px-3"> <input type="submit"
-                                                            value="GET IT NOW!"
-                                                            class="btn btn-block btn-black rm-border"> </div>
-                                                </div>
-                                                <div class="form-group row justify-content-center mb-0">
-                                                    <div class="col-md-12 px-3">
-                                                        <p class="conditions">* $50 minimum purchase</p>
-                                                    </div>
-                                                </div>
+
+                            <form class="">
+                                <div class="card">
+                                    <div class="row justify-content-center">
+                                        <div class="row mt-0">
+                                            <div class="col-md-12 ">
+                                                <h4 class="text-center heading">get 10% off</h4>
+                                                <p class="text-center sub-heading">subscribe to our
+                                                    newsletter & receive a coupon</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row mb-3">
+                                            <div class="col-md-12 mb-0"> <input id="e-mail" type="text"
+                                                    placeholder="ENTER YOUR EMAIL" name="email"
+                                                    class="form-control input-box rm-border text-center">
+                                            </div>
+                                        </div>
+                                        <div class="row my-4">
+                                            <div class="col-md-12 d-flex justify-content-center align-items-center">
+                                                <button class="w-25 btn btn-primary" type="submit">Subscribe to
+                                                    Newsletter</button>
+                                            </div>
+                                        </div>
+                                        <div class="form-group row justify-content-center mb-0">
+                                            <div class="col-md-12 px-3">
+                                                <p class="conditions">* $50 minimum purchase</p>
                                             </div>
                                         </div>
                                     </div>
-                                </form>
-                            </div>
+                                </div>
+                            </form>
                         </div>
                     </div>
                 </div>
@@ -300,8 +717,42 @@
             </div>
             <div class="info3 inactive">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
-                <div>
+                <div class="container-fluid career-container">
+                    <div class="row">
+                        <div class="col-12 heavy">
+                            <h2>Jobs Career Option</h2>
+                        </div>
+                    </div>
 
+                    <div class="career-item1">
+                        <p>Jobs directly related to your degree include:</p>
+                        <ul>
+                            <li><a href="#">Applications Developer</a></li>
+                            <li><a href="#">Game Developer</a></li>
+                            <li><a href="#">Multimedia programmer</a></li>
+                            <li><a href="#">Multimedia Specialist</a></li>
+                            <li><a href="#">SEO Specialist</a></li>
+                            <li><a href="#">UX Designer</a></li>
+                            <li><a href="#">UX Researcher</a></li>
+                            <li><a href="#">Web Content Manager</a></li>
+                            <li><a href="#">Web Designer</a></li>
+                            <li><a href="#">Web Developer</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="career-item2">
+                        <p>Jobs where your degree would be useful include:</p>
+                        <ul>
+                            <li><a href="#">Artworker</a></li>
+                            <li><a href="#">Database Administrator</a></li>
+                            <li><a href="#">Information systems manager</a></li>
+                            <li><a href="#">IT sales Professional</a></li>
+                            <li><a href="#">Sofware Engineer</a></li>
+                            <li><a href="#">Software Tester</a></li>
+                            <li><a href="#">Systems Analyst</a></li>
+                            <li><a href="#">Technical Author</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <!-- END OF CAREERS -->
@@ -313,457 +764,458 @@
             <div class="info4 inactive">
                 <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">X</a>
 
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Case Studies</h1>
+                            <p>Our latest work in marketing, UI/UX design, mobile app development, wearable tech,
+                                website design and development, and web app development.</p>
+                        </div>
+                    </div>
+                </div>
+
                 <div style="height: fit-content">
-                    <div style="height: fit-content">
-                        <div class="slideshow-header">
-                            <h3>Case Studies</h3>
-                            <h6>Our latest work in marketing, UI/UX design, mobile app development, wearable tech,
-                                website design and development, and web app development.</h6>
+                    <section class="work-slideshow1">
+                        <article>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                <figcaption>
+                                                    <h2>Diabetes Control</h2>
+                                                </figcaption>
+                                                <figcaption>The aim is to create an app which will make lives of
+                                                    people
+                                                    with diabetes simplier.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                <figcaption>
+                                                    <h2>Limehome</h2>
+                                                </figcaption>
+                                                <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                    professionals and equipped by interior designers, they are able
+                                                    to
+                                                    combine the quality standard of a hotel with the advantages of
+                                                    an
+                                                    apartment.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                <figcaption>
+                                                    <h2>Tasty</h2>
+                                                </figcaption>
+                                                <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                    your phone’s screen awake while it does so. Vegetarian? You can
+                                                    choose to hide all recipes involving meat.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                <figcaption>
+                                                    <h2>TuneGo</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    TuneGO is a free platform to protect your rights and
+                                                    distribute your music globally through hundreds of digital music
+                                                    stores, and collect royalties.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                <figcaption>
+                                                    <h2>Databox</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    Databox builds scalable data pipeline infrastructure &
+                                                    deploy machine learning and artificial intelligence models.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                <figcaption>
+                                                    <h2>Diabetes Control</h2>
+                                                </figcaption>
+                                                <figcaption>The aim is to create an app which will make lives of
+                                                    people
+                                                    with diabetes simplier.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                <figcaption>
+                                                    <h2>Limehome</h2>
+                                                </figcaption>
+                                                <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                    professionals and equipped by interior designers, they are able
+                                                    to
+                                                    combine the quality standard of a hotel with the advantages of
+                                                    an
+                                                    apartment.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                <figcaption>
+                                                    <h2>Tasty</h2>
+                                                </figcaption>
+                                                <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                    your phone’s screen awake while it does so. Vegetarian? You can
+                                                    choose to hide all recipes involving meat.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                <figcaption>
+                                                    <h2>TuneGo</h2>
+                                                </figcaption>
+                                                <figcaption>TuneGO is a free platform to protect your rights and
+                                                    distribute your music globally through hundreds of digital music
+                                                    stores, and collect royalties.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                <figcaption>
+                                                    <h2>Databox</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    Databox builds scalable data pipeline infrastructure &
+                                                    deploy machine learning and artificial intelligence models.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+
+                <div style="height: fit-content">
+                    <section class="work-slideshow2">
+                        <article>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                <figcaption>
+                                                    <h2>Diabetes Control</h2>
+                                                </figcaption>
+                                                <figcaption>The aim is to create an app which will make lives of
+                                                    people
+                                                    with diabetes simplier.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                <figcaption>
+                                                    <h2>Limehome</h2>
+                                                </figcaption>
+                                                <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                    professionals and equipped by interior designers, they are able
+                                                    to
+                                                    combine the quality standard of a hotel with the advantages of
+                                                    an
+                                                    apartment.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                <figcaption>
+                                                    <h2>Tasty</h2>
+                                                </figcaption>
+                                                <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                    your phone’s screen awake while it does so. Vegetarian? You can
+                                                    choose to hide all recipes involving meat.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                <figcaption>
+                                                    <h2>TuneGo</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    TuneGO is a free platform to protect your rights and
+                                                    distribute your music globally through hundreds of digital music
+                                                    stores, and collect royalties.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                <figcaption>
+                                                    <h2>Databox</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    Databox builds scalable data pipeline infrastructure &
+                                                    deploy machine learning and artificial intelligence models.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
+                                                <figcaption>
+                                                    <h2>Diabetes Control</h2>
+                                                </figcaption>
+                                                <figcaption>The aim is to create an app which will make lives of
+                                                    people
+                                                    with diabetes simplier.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
+                                                <figcaption>
+                                                    <h2>Limehome</h2>
+                                                </figcaption>
+                                                <figcaption>Limehome is better than a hotel. Run by hospitality
+                                                    professionals and equipped by interior designers, they are able
+                                                    to
+                                                    combine the quality standard of a hotel with the advantages of
+                                                    an
+                                                    apartment.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
+                                                <figcaption>
+                                                    <h2>Tasty</h2>
+                                                </figcaption>
+                                                <figcaption>Tasty provides great step-by-step instructions and keeps
+                                                    your phone’s screen awake while it does so. Vegetarian? You can
+                                                    choose to hide all recipes involving meat.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
+                                                <figcaption>
+                                                    <h2>TuneGo</h2>
+                                                </figcaption>
+                                                <figcaption>TuneGO is a free platform to protect your rights and
+                                                    distribute your music globally through hundreds of digital music
+                                                    stores, and collect royalties.</figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <figure>
+                                                <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
+                                                <figcaption>
+                                                    <h2>Databox</h2>
+                                                </figcaption>
+                                                <figcaption>
+                                                    Databox builds scalable data pipeline infrastructure &
+                                                    deploy machine learning and artificial intelligence models.
+                                                </figcaption>
+                                            </figure>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </article>
+                    </section>
+                </div>
+
+                <div class="container-fluid heavy">
+                    <div class="row">
+                        <div class="col-12">
+                            <h1>Curated for Companies</h1>
+                            <p>Companies partnered with us for creativity and strategy.</p>
                         </div>
                     </div>
+                </div>
 
-                    <div style="height: fit-content">
-                        <section class="work-slideshow1">
-                            <article>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
-                                                    <figcaption>
-                                                        <h2>Diabetes Control</h2>
-                                                    </figcaption>
-                                                    <figcaption>The aim is to create an app which will make lives of
-                                                        people
-                                                        with diabetes simplier.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
-                                                    <figcaption>
-                                                        <h2>Limehome</h2>
-                                                    </figcaption>
-                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
-                                                        professionals and equipped by interior designers, they are able
-                                                        to
-                                                        combine the quality standard of a hotel with the advantages of
-                                                        an
-                                                        apartment.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
-                                                    <figcaption>
-                                                        <h2>Tasty</h2>
-                                                    </figcaption>
-                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
-                                                        your phone’s screen awake while it does so. Vegetarian? You can
-                                                        choose to hide all recipes involving meat.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
-                                                    <figcaption>
-                                                        <h2>TuneGo</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        TuneGO is a free platform to protect your rights and
-                                                        distribute your music globally through hundreds of digital music
-                                                        stores, and collect royalties.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
-                                                    <figcaption>
-                                                        <h2>Databox</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        Databox builds scalable data pipeline infrastructure &
-                                                        deploy machine learning and artificial intelligence models.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
-                                                    <figcaption>
-                                                        <h2>Diabetes Control</h2>
-                                                    </figcaption>
-                                                    <figcaption>The aim is to create an app which will make lives of
-                                                        people
-                                                        with diabetes simplier.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
-                                                    <figcaption>
-                                                        <h2>Limehome</h2>
-                                                    </figcaption>
-                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
-                                                        professionals and equipped by interior designers, they are able
-                                                        to
-                                                        combine the quality standard of a hotel with the advantages of
-                                                        an
-                                                        apartment.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
-                                                    <figcaption>
-                                                        <h2>Tasty</h2>
-                                                    </figcaption>
-                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
-                                                        your phone’s screen awake while it does so. Vegetarian? You can
-                                                        choose to hide all recipes involving meat.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
-                                                    <figcaption>
-                                                        <h2>TuneGo</h2>
-                                                    </figcaption>
-                                                    <figcaption>TuneGO is a free platform to protect your rights and
-                                                        distribute your music globally through hundreds of digital music
-                                                        stores, and collect royalties.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
-                                                    <figcaption>
-                                                        <h2>Databox</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        Databox builds scalable data pipeline infrastructure &
-                                                        deploy machine learning and artificial intelligence models.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-
-                    <div style="height: fit-content">
-                        <section class="work-slideshow2">
-                            <article>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
-                                                    <figcaption>
-                                                        <h2>Diabetes Control</h2>
-                                                    </figcaption>
-                                                    <figcaption>The aim is to create an app which will make lives of
-                                                        people
-                                                        with diabetes simplier.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
-                                                    <figcaption>
-                                                        <h2>Limehome</h2>
-                                                    </figcaption>
-                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
-                                                        professionals and equipped by interior designers, they are able
-                                                        to
-                                                        combine the quality standard of a hotel with the advantages of
-                                                        an
-                                                        apartment.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
-                                                    <figcaption>
-                                                        <h2>Tasty</h2>
-                                                    </figcaption>
-                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
-                                                        your phone’s screen awake while it does so. Vegetarian? You can
-                                                        choose to hide all recipes involving meat.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
-                                                    <figcaption>
-                                                        <h2>TuneGo</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        TuneGO is a free platform to protect your rights and
-                                                        distribute your music globally through hundreds of digital music
-                                                        stores, and collect royalties.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
-                                                    <figcaption>
-                                                        <h2>Databox</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        Databox builds scalable data pipeline infrastructure &
-                                                        deploy machine learning and artificial intelligence models.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div>
-                                    <ul>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/3.png">
-                                                    <figcaption>
-                                                        <h2>Diabetes Control</h2>
-                                                    </figcaption>
-                                                    <figcaption>The aim is to create an app which will make lives of
-                                                        people
-                                                        with diabetes simplier.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/4.png">
-                                                    <figcaption>
-                                                        <h2>Limehome</h2>
-                                                    </figcaption>
-                                                    <figcaption>Limehome is better than a hotel. Run by hospitality
-                                                        professionals and equipped by interior designers, they are able
-                                                        to
-                                                        combine the quality standard of a hotel with the advantages of
-                                                        an
-                                                        apartment.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/2.png">
-                                                    <figcaption>
-                                                        <h2>Tasty</h2>
-                                                    </figcaption>
-                                                    <figcaption>Tasty provides great step-by-step instructions and keeps
-                                                        your phone’s screen awake while it does so. Vegetarian? You can
-                                                        choose to hide all recipes involving meat.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/5.png">
-                                                    <figcaption>
-                                                        <h2>TuneGo</h2>
-                                                    </figcaption>
-                                                    <figcaption>TuneGO is a free platform to protect your rights and
-                                                        distribute your music globally through hundreds of digital music
-                                                        stores, and collect royalties.</figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a href="#">
-                                                <figure>
-                                                    <img src="https://fireart.studio/wp-content/uploads/2021/03/1.png">
-                                                    <figcaption>
-                                                        <h2>Databox</h2>
-                                                    </figcaption>
-                                                    <figcaption>
-                                                        Databox builds scalable data pipeline infrastructure &
-                                                        deploy machine learning and artificial intelligence models.
-                                                    </figcaption>
-                                                </figure>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </article>
-                        </section>
-                    </div>
-
-                    <div style="height: fit-content" class="container">
-                        <div class="slideshow-header">
-                            <h3>Curated for Companies</h3>
-                            <h6>Companies we're partnered with in creative design and strategies</h6>
+                <div class="slider1">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
+                                width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
+                                width="250" alt="" />
                         </div>
                     </div>
+                </div>
 
-                    <div class="slider1">
-                        <div class="slide-track">
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/1.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/2.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/3.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/4.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/5.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/6.png" height="100"
-                                    width="250" alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/557257/7.png" height="100"
-                                    width="250" alt="" />
-                            </div>
+                <div class="slider2">
+                    <div class="slide-track">
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
+                                alt="" />
                         </div>
-                    </div>
-
-                    <div class="slider2">
-                        <div class="slide-track">
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
-                                    alt="" />
-                            </div>
-                            <div class="slide">
-                                <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250"
-                                    alt="" />
-                            </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250" alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/admu-1.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/pclc.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/tspc.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/hca.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/osmi.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/sip.png" height="100" width="250"
+                                alt="" />
+                        </div>
+                        <div class="slide">
+                            <img src="https://www.xolveit.com/storage/2020/07/mp.png" height="100" width="250" alt="" />
                         </div>
                     </div>
                 </div>
@@ -852,11 +1304,219 @@
             </div>
         </section>
     </div>
+
+    <div id="mainForm">
+        <button class="openForm" id="proposalButton" onclick="openForm()">&#9776; Request a Proposal</button>
+    </div>
+
+    <div id="mySideForm" class="sideForm">
+        <a href="javascript:void(0)" class="closeForm" onclick="closeForm()">X</a>
+        <div class="container">
+            <div class="py-2 text-center">
+                <h2>Request a Proposal</h2>
+                <h4>Fill Out Our Form & We’ll be in Touch Shortly</h4>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="firstName" class="form-label">First name</label>
+                    <input type="text" class="form-control" id="firstName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="lastName" class="form-label">Last name</label>
+                    <input type="text" class="form-control" id="lastName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="email" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="email" placeholder="you@example.com" required>
+                    <div class="invalid-feedback">
+                        Please enter a valid email address.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="telephone" class="form-label">Contact Phone Number</label>
+                    <input type="tel" class="form-control" id="telephone" placeholder="" value="" required
+                        pattern="[0-9]{11}">
+                    <div class="invalid-feedback">
+                        Please enter a valid 11-digit contact number (09123456789).
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-6">
+                    <label for="companyName" class="form-label">Company Name</label>
+                    <input type="text" class="form-control" id="companyName" placeholder="" value="" required>
+                    <div class="invalid-feedback">
+                        Valid company name is required.
+                    </div>
+                </div>
+
+                <div class="col-md-6">
+                    <label for="country" class="form-label">How did you know about us?</label>
+                    <select class="form-select" id="country" required>
+                        <option value="">Choose...</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                        <option>Option</option>
+                    </select>
+                    <div class="invalid-feedback">
+                        Please select a valid choice.
+                    </div>
+                </div>
+            </div>
+
+            <div class="py-2 text-left">
+                <h4>Project Type</h4>
+            </div>
+
+            <div class="row">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Website</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Marketing Automation</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">SEO</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Email Marketing</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Amazon</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Branding</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Mobile App</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Social Media</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">PPC</label>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6">
+                        <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="same-address">
+                            <label class="form-check-label" for="same-address">Marketing - Other</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="mb-3">
+                        <label for="textArea" class="form-label">Project Description</label>
+                        <textarea class="form-control" id="textArea" rows="5"></textarea>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-check">
+                        <input type="checkbox" class="form-check-input" id="same-address1">
+                        <label class="form-check-label" for="same-address1">Sign me up for (dot)Logix Libation. Get
+                            monthly marketing, web, mobile tips and insight.</label>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row my-4">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <button class="w-50 btn btn-primary" type="submit">Submit Proposal Request</button>
+                </div>
+            </div>
+            </form>
+
+            <div class="row my-4">
+                <div class="col-md-12 d-flex justify-content-center align-items-center">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3861.1809457415998!2d121.03524604840773!3d14.588762991389187!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMTTCsDM1JzE5LjYiTiAxMjHCsDAyJzE0LjEiRQ!5e0!3m2!1sen!2sph!4v1627466073286!5m2!1sen!2sph"
+                        width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
     <!-- END OF VIDEO SLIDER -->
 
     <!-- CUSTOM JS -->
     <script src="assets/js/animation.js" type="text/javascript"></script>
     <script>
+        /* Set the width of the sidebar to 250px and the left margin of the page content to 250px */
+        function openForm() {
+            document.getElementById("mySideForm").style.width = "75%";
+            document.getElementById("mainForm").style.marginLeft = "75%";
+        }
+
+        /* Set the width of the sidebar to 0 and the left margin of the page content to 0 */
+        function closeForm() {
+            document.getElementById("mySideForm").style.width = "0";
+            document.getElementById("mainForm").style.marginLeft = "0";
+        }
     </script>
 </body>
 
