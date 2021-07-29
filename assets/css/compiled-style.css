@@ -1,16 +1,18 @@
 @import url("bootstrap.min.css");
 @import url("swiper.min.css");
-@import url("articles.css");
 @import url("loader.css");
 @import url("navbar.css");
 @import url("sidebar.css");
 @import url("video-slider.css");
 @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,400;0,600;0,900;1,400;1,500;1,900&display=swap');
 /* ARTICLES CSS */
+@import url("articles.css");
 @import url("contact-us.css");
 @import url("demos.css");
 @import url("services.css");
 @import url("about-us.css");
 @import url("careers.css");
+@import url("blogs.css");
+@import url("footer.css");
 
 

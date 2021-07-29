@@ -10,7 +10,7 @@
   /* Stay on top */
   top: 0;
   left: 0;
-  background-color: #bb02c2;
+  background-color: #ff00dd;
   /* Black*/
   overflow-x: hidden;
   /* Disable horizontal scroll */
@@ -18,7 +18,7 @@
   /* Place content 60px from the top */
   transition: 0.5s;
   /* 0.5 second transition effect to slide in the sidebar */
-  color: white;
+  color: black;
 }
 
 /* The sidebar links */
@@ -29,6 +29,21 @@
   color: #818181;
   display: block;
   transition: 0.3s;
+}
+
+.sideForm .footer-form p,
+.sideForm .footer-form a {
+  font-size: 15px;
+}
+
+.sideForm input,
+.sideForm select,
+.sideForm textarea {
+  background-color: #575757;
+}
+
+.sideForm select {
+  color: white;
 }
 
 /* When you mouse over the navigation links, change their color */
