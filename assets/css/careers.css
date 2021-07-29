@@ -17,13 +17,7 @@
 }
 
 .lightHeader {
-  background-color: rgba(238, 0, 206, 0.8);
-}
-
-.career-background {
-  background-image: url("https://fireart.studio/wp-content/uploads/2019/12/bg13.png");
-  background-size: 100vw;
-  background-repeat: no-repeat;
+  background-color: transparent;
 }
 
 .career-container h2 {
