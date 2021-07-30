@@ -106,7 +106,7 @@ var swiper = new Swiper(".swiper-container", {
     prevButton: ".swiper-button-prev",
     spaceBetween: 0,
     autoplay: 5000,
-    autoplayDisableOnInteraction: false,
+    autoplayDisableOnInteraction: true,
 });
 
 $(".opennav, .closebtn").click(function (e) {
